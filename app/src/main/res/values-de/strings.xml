@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+
+    <string name="app_name">Tischtennis</string>
+    <string name="input_name1">Spieler 1</string>
+    <string name="input_name2">Spieler 2</string>
+    <string name="summary_name1"> <xliff:g example="Spieler 1" id="name">%s</xliff:g>"</string>
+    <string name="summary_name2"> <xliff:g example="Spieler 2" id="name">%s</xliff:g></string>
+    <string name="toast_Win1">Glückwunsch Spieler 1</string>
+    <string name="toast_Win2">Glückwunsch Spieler 2</string>
+    <string name="Start">Start</string>
+
+</resources>

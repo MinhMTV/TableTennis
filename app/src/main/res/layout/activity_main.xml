@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.minhtv.tabletennis.MainActivity"
+    android:background="#1B5E20">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/TableTennis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tabletennis" />
+
+
+            <EditText
+                android:id="@+id/player1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="20dp"
+                android:hint="@string/input_name1"
+                android:inputType="textCapWords"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/player2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="20dp"
+                android:hint="@string/input_name2"
+                android:inputType="textCapWords"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/counter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="100dp"
+                android:text="@string/display_count1"
+                android:textColor="#FFFFFF"
+                android:textSize="56sp" />
+
+            <TextView
+                android:id="@+id/counter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="100dp"
+                android:text="@string/display_count2"
+                android:textColor="#FFFFFF"
+                android:textSize="56sp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/summary_name1"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/vs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/vs"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/summary_name2"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_count1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:onClick="Count1"
+                android:text="@string/button_count1"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/button_count2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:onClick="Count2"
+                android:text="@string/button_count2"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/display_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="130dp"
+                android:layout_weight="1"
+                android:text="@string/display_1"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/display_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="130dp"
+                android:layout_weight="1"
+                android:text="@string/display_2"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentBottom="true"
+                android:onClick="startGame"
+                android:text="@string/Start"
+                android:textAppearance="?android:textAppearanceLarge" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

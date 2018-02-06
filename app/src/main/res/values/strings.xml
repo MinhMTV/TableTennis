@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+    <string name="app_name">TableTennis</string>
+
+
+    <!-- Player 1 Name Input [CHAR LIMIT=20] -->
+    <string name="input_name1">Player 1</string>
+
+
+    <!-- Player 1 Name Input [CHAR LIMIT=20] -->
+    <string name="input_name2">Player 2</string>
+
+    <!-- Display the actual score player1 [CHAR LIMIT=5] -->
+    <string name="display_count1" translatable="false">0 </string>
+
+
+    <!-- Display the actual score player2 [CHAR LIMIT=5] -->
+    <string name="display_count2" translatable="false">0</string>
+
+
+    <!-- name für das Spiel player 1 -->
+    <string name="summary_name1"> <xliff:g example="Player1" id="name">%s</xliff:g></string>
+
+    <!-- name für das Spiel player 1 -->
+    <string name="summary_name2"> <xliff:g example="Player2" id="name">%s</xliff:g></string>
+
+    <string name="display_1" translatable="false">0</string>
+    <string name="display_2" translatable="false">0</string>
+
+
+    <!-- String to use in a toast message if the game ended. [CHAR LIMIT=45] -->
+    <string name="toast_Win1">Congratulations Player1</string>
+    <string name="button_count1" translatable="false">0</string>
+    <string name="button_count2" translatable="false">0</string>
+    <string name="vs" translatable="false">VS</string>
+    <string name="toast_Win2">Congratulations Player2</string>
+    <string name="Start">Start</string>
+
+
+</resources>
+
